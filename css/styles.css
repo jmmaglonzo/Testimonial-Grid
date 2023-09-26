@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 1rem;
+  grid-template-areas: "box1 box1 box2 box3" "box4 box5 box5 box3";
+}
+.grid-container .box {
+  border-radius: 5px;
+  padding: 3rem;
+  box-shadow: 5px 5px black;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .testimonial-1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-area: box1;
+}
+.grid-container .testimonial-2 {
+  background-color: #48556b;
+  grid-area: box2;
+}
+.grid-container .testimonial-3 {
+  background-color: #fff;
+  grid-area: box3;
+}
+.grid-container .testimonial-4 {
+  background-color: #fff;
+  grid-area: box4;
+}
+.grid-container .testimonial-5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: box5;
+}
+.grid-container .header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.grid-container .header img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.grid-container .header .name {
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .header .name h4 {
+  font-weight: 500;
+  color: hsl(210, 46%, 95%);
+}
+.grid-container .header .name p {
+  color: hsl(0, 0%, 81%);
+}
+.grid-container .top {
+  font-weight: 600;
+  color: hsl(210, 46%, 95%);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.grid-container .bottom {
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+}

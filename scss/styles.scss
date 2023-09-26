@@ -1,0 +1,75 @@
+@import "variables";
+
+.grid-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 1rem;
+  grid-template-areas:
+    "box1 box1 box2 box3"
+    "box4 box5 box5 box3";
+  .box {
+    border-radius: 5px;
+    padding: 3rem;
+    box-shadow: 5px 5px black;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-1 {
+    background-color: $violet;
+    grid-area: box1;
+  }
+  .testimonial-2 {
+    background-color: $grayishBlue;
+    grid-area: box2;
+  }
+  .testimonial-3 {
+    background-color: $white;
+    grid-area: box3;
+  }
+  .testimonial-4 {
+    background-color: $white;
+    grid-area: box4;
+  }
+  .testimonial-5 {
+    background-color: $blackishBlue;
+    grid-area: box5;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    img {
+      border-radius: 50%;
+      border: 2px solid $white;
+    }
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-weight: 500;
+        color: $grayish-blue;
+      }
+      p {
+        color: $light-gray;
+      }
+    }
+  }
+
+  .top {
+    font-weight: 600;
+    color: $grayish-blue;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .bottom {
+    color: $light-gray;
+    font-weight: 500;
+  }
+}

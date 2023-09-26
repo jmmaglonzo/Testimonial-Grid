@@ -1,0 +1,25 @@
+// Primary Colors
+$violet: hsl(263, 55%, 52%);
+$grayishBlue: #48556b;
+$blackishBlue: hsl(219, 29%, 14%);
+$white: #fff;
+
+// Neutral
+$light-gray: hsl(0, 0%, 81%);
+$grayish-blue: hsl(210, 46%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

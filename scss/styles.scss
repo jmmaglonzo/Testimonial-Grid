@@ -6,20 +6,23 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, min-content);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-areas:
     "box1 box1 box2 box3"
     "box4 box5 box5 box3";
   .box {
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 3rem;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
   }
   .testimonial-1 {
     background-color: $violet;
     grid-area: box1;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: 80% 0;
+    background-repeat: no-repeat;
   }
   .testimonial-2 {
     background-color: $grayishBlue;
@@ -47,6 +50,7 @@
     img {
       border-radius: 50%;
       border: 2px solid $white;
+      width: 3.2rem;
     }
 
     .name {
@@ -71,5 +75,25 @@
   .bottom {
     color: $light-gray;
     font-weight: 500;
+    line-height: 1.7;
+  }
+
+  .dark {
+    .header {
+      .name {
+        h4,
+        p {
+          color: $dark;
+        }
+      }
+    }
+    .top {
+      color: $dark;
+    }
+    .bottom {
+      color: $dark;
+    }
   }
 }
+
+@import "mediaqueries";

@@ -3,6 +3,7 @@ $violet: hsl(263, 55%, 52%);
 $grayishBlue: #48556b;
 $blackishBlue: hsl(219, 29%, 14%);
 $white: #fff;
+$dark: hsl(230, 9%, 38%);
 
 // Neutral
 $light-gray: hsl(0, 0%, 81%);
@@ -22,4 +23,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ecf2f8;
+  padding: 2em;
 }
